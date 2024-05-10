@@ -1,0 +1,107 @@
+:root {
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  /* MAIN BACKGROUND */
+  --very-dark-blue-bg: hsl(217, 54%, 11%);
+  /* CARD BACKGROUND */
+  --very-dark-blue-component-bg: hsl(216, 50%, 16%);
+  /* LINE */
+  --very-dark-blue-line: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100vh;
+  font-family: 'Outfit', sans-serif;
+  background: var(--very-dark-blue-bg);
+}
+.component{
+  width: 85%;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: var(--very-dark-blue-component-bg);
+  max-width: 315px;
+}
+.nft-image{
+  width: 100%;
+  border-radius: 10px;
+}
+.nft-name{
+  display: inline-block;
+  margin: 10px;
+  margin-left: 0;
+  font-size: 19px;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--white)
+}
+.nft-name:hover{
+  color: var(--cyan);
+}
+.nft-description{
+  font-size: 16px;
+  font-weight: 300px;
+  color: var(--soft-blue);
+  margin-bottom: 10px;
+}
+.time-price-container{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0 15px;
+  border-bottom: 1px solid var(--very-dark-blue-line);
+}
+.price{
+  color: var(--cyan);
+}
+#icon-price{
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-image: url("../images/icon-ethereum.svg");
+  background-repeat: no-repeat;
+}
+.time{
+  color: var(--soft-blue)
+}
+#icon-time{
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  background-image: url("/images/icon-clock.svg");
+}
+.autor-container{
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.avatar{
+  margin-right: 15px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 1px solid var(--white);
+}
+.autor-text{
+  font-weight: 300px;
+  color: var(--soft-blue);
+}
+#autor-name{
+  text-decoration: none;
+  color: var(--white);
+}
+#autor-name:hover{
+  color: var(--cyan);
+}
